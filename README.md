@@ -77,6 +77,7 @@ Rename in the `package.json` File
 
 <details>
 <summary><code>Rename iOS Directory </code></summary>
+
 1. **Open the iOS Project in Xcode**:
    - Navigate to the `ios/` directory.
    - Open the `.xcworkspace` file (or `.xcodeproj` if no `.xcworkspace` is available) in Xcode.
@@ -249,5 +250,15 @@ module.exports = {
 </details>
 
 ## <a name="links">🔗 Links</a>
+
+- [Git](https://github.com/SanduPalii/ReactN-Expo-base) (Project Git)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [React Native](https://reactnative.dev/)
+- [Tailwind](https://tailwindcss.com/) (CSS framework packed with classes like flex, pt-4, text-center)
+
+- [React Native Directory](https://reactnative.directory/) (Resources that are compatible with Expo)
+- [@expo/vector-icons@14.0.4](https://icons.expo.fyi/Index) (Expo vector icons library)
+- [react-native-ble-manager](https://github.com/innoveit/react-native-ble-manager) (A React Native Bluetooth Low Energy library)
 
 ## <a name="more">🚀 More</a>
