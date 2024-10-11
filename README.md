@@ -67,6 +67,7 @@ cd ReactN-Expo-base
 Update `app.json`
 `"name": "YourProjectName",`
 `"slug": "yourprojectname",`
+
 Note: The "slug" field should be a URL-friendly version of the name (all lowercase, no spaces).
 
 Rename in the `package.json` File
@@ -74,6 +75,8 @@ Rename in the `package.json` File
 
 ### iOS Steps:
 
+<details>
+<summary><code>Rename iOS Directory </code></summary>
 1. **Open the iOS Project in Xcode**:
    - Navigate to the `ios/` directory.
    - Open the `.xcworkspace` file (or `.xcodeproj` if no `.xcworkspace` is available) in Xcode.
@@ -88,8 +91,12 @@ Rename in the `package.json` File
 5. **Update `Info.plist`**:
    - In Xcode, select the `Info.plist` file under the `ios/NewProjectName` directory.
    - Update the `CFBundleName` field to your new project name.
+   </details>
 
 ### Android Steps:
+
+<details>
+<summary><code>Rename Android Directory </code></summary>
 
 1. **Update `android/app/build.gradle`**:
    - Open `android/app/build.gradle`.
@@ -125,6 +132,14 @@ Rename in the `package.json` File
    ./gradlew clean
    ```
 
+   </details>
+
+Clearing the cache can help ensure that the old project name doesn’t interfere with the new setup:
+
+```bash
+expo start -c
+```
+
 **Installation**
 
 Install the project dependencies using npm:
@@ -151,11 +166,8 @@ Navigate to the [Expo documentation](https://docs.expo.dev/workflow/ios-simulato
 
 Navigate to the [Expo documentation](https://docs.expo.dev/workflow/android-studio-emulator/) to learn how to install and run your application on an Android Emulator for local development.
 
-The folder structure will be simple and scalable. Expo recommends a structure that fits most projects:
+Note: `expo prebuild` generates the native `android` and `ios` directories, allowing you to add custom native code or native modules.
 
-**`npx expo prebuild` Command**:
-
-- Running `expo prebuild` generates the native `android` and `ios` directories, allowing you to add custom native code or native modules.
 <details>
 <summary><code>Structure that fits most projects</code></summary>
 
