@@ -1,12 +1,37 @@
-# ReactN-Expo-base
+<div align="center">
 
-### 1. **Tech Stack:**
+  <div>
+    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-expo-black?style=for-the-badge&logoColor=white&logo=expo&color=FD366E" alt="expo" />
+    <img src="https://img.shields.io/badge/NativeWind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="nativewind" />
+  </div>
+
+  <h3 align="center">React Native basic template for TAP</h3>
+
+   <div align="center">
+     Follow instructions step by step with our detailed tutorial.
+    </div>
+</div>
+
+## 📋 <a name="table">Table of Contents</a>
+
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+5. 🕸️ [Snippets](#snippets)
+6. 🔗 [Links](#links)
+7. 🚀 [More](#more)
+
+## <a name="introduction">🤖 Introduction</a>
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - **React Native** with **Expo**: Expo will be the base framework, providing an easier development experience.
 - **Tailwind CSS**: Use **NativeWind** for Tailwind-like styling in React Native, allowing flexibility to add more design systems later.
 - **TypeScript**: TypeScript will be supported, but you can switch between TypeScript and JavaScript as needed.
 
-### 2. **Features:**
+## <a name="features">🔋 Features</a>
 
 The following features will be included in the template:
 
@@ -18,7 +43,7 @@ The following features will be included in the template:
 
 _You can use the [**React Native Directory**](https://reactnative.directory/) website to check the compatibility of third-party libraries with Expo. This ensures that the libraries you plan to add later will work seamlessly in your Expo project._
 
-### 3. **Folder Structure (Following Expo Recommendations):**
+## <a name="quick-start">🤸 Quick Start</a>
 
 The folder structure will be simple and scalable. Expo recommends a structure that fits most projects:
 
@@ -80,3 +105,27 @@ my-app/
 └── node_modules/           # Project dependencies
 
 ```
+
+## <a name="snippets">🕸️ Snippets</a>
+
+<details>
+<summary><code>tailwind.config.js</code></summary>
+
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./app/**/*.{js,ts,tsx}', './components/**/*.{js,ts,tsx}'],
+
+  presets: [require('nativewind/preset')],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+</details>
+
+## <a name="links">🔗 Links</a>
+
+## <a name="more">🚀 More</a>
