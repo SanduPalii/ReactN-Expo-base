@@ -45,11 +45,119 @@ _You can use the [**React Native Directory**](https://reactnative.directory/) we
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/SanduPalii/ReactN-Expo-base.git
+cd ReactN-Expo-base
+```
+
+**Rename your React Native project**
+
+Update `app.json`
+`"name": "YourProjectName",`
+`"slug": "yourprojectname",`
+Note: The "slug" field should be a URL-friendly version of the name (all lowercase, no spaces).
+
+Rename in the `package.json` File
+`"name": "newprojectname",`
+
+### iOS Steps:
+
+1. **Open the iOS Project in Xcode**:
+   - Navigate to the `ios/` directory.
+   - Open the `.xcworkspace` file (or `.xcodeproj` if no `.xcworkspace` is available) in Xcode.
+2. **Rename the iOS Project in Xcode**:
+   - In Xcode, click on the project name in the left sidebar.
+   - Right-click the project and select "Rename". Enter the new name.
+3. **Update Bundle Identifier**:
+   - In Xcode, select the project in the left sidebar and go to the **General** tab.
+   - Update the **Bundle Identifier** to reflect your new project name. For example, `com.yourname.newprojectname`.
+4. **Rename iOS Directory**:
+   - In your project folder, manually rename the `ios/MyOldProject` folder to `ios/NewProjectName`.
+5. **Update `Info.plist`**:
+   - In Xcode, select the `Info.plist` file under the `ios/NewProjectName` directory.
+   - Update the `CFBundleName` field to your new project name.
+
+### Android Steps:
+
+1. **Update `android/app/build.gradle`**:
+   - Open `android/app/build.gradle`.
+   - Update the `applicationId` to match your new package name (e.g., `com.yourname.newprojectname`).
+2. **Rename the Package in the Manifest**:
+   - Open `android/app/src/main/AndroidManifest.xml`.
+   - Update the `package` attribute to your new package name (e.g., `com.yourname.newprojectname`).
+3. **Rename the Java Package**:
+
+   - Navigate to `android/app/src/main/java/com/yourname/oldprojectname/`.
+   - Rename the folder to `newprojectname`.
+   - Open each Java file (e.g., `MainActivity.java`) and update the package name at the top of each file:
+
+   ```java
+   package com.yourname.newprojectname;
+   ```
+
+4. **Update `strings.xml`**:
+
+   - Open `android/app/src/main/res/values/strings.xml`.
+   - Update the `app_name` field to the new project name:
+
+   ```xml
+   <string name="app_name">NewProjectName</string>
+   ```
+
+5. **Clean and Rebuild the Project**:
+
+   - Run the following commands to clean and rebuild the Android project:
+
+   ```bash
+   cd android
+   ./gradlew clean
+   ```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Running the Project**
+
+```bash
+npx expo start
+```
+
+**Expo Go**
+
+Download the [Expo Go](https://expo.dev/go) app onto your device, then use it to scan the QR code from Terminal and run.
+
+**iOS Simulator**
+
+Navigate to the [Expo documentation](https://docs.expo.dev/workflow/ios-simulator/) to learn how to install and run your application on an iOS Simulator for local development.
+
+**Android Emulator**
+
+Navigate to the [Expo documentation](https://docs.expo.dev/workflow/android-studio-emulator/) to learn how to install and run your application on an Android Emulator for local development.
+
 The folder structure will be simple and scalable. Expo recommends a structure that fits most projects:
 
 **`npx expo prebuild` Command**:
 
 - Running `expo prebuild` generates the native `android` and `ios` directories, allowing you to add custom native code or native modules.
+<details>
+<summary><code>Structure that fits most projects</code></summary>
 
 ```
 my-app/
@@ -105,6 +213,8 @@ my-app/
 └── node_modules/           # Project dependencies
 
 ```
+
+</details>
 
 ## <a name="snippets">🕸️ Snippets</a>
 
