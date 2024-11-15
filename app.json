@@ -10,18 +10,18 @@
       "favicon": ""
     },
     "plugins": [
-      "expo-router"
+      ["expo-router", {"origin": "https://www.futurewearableslab.fi/"}]
     ],
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
     },
     "orientation": "portrait",
-    "icon": "",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/images/logo_medium.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "",
-      "resizeMode": "contain",
+      "image": "./assets/images/loading_page.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
@@ -33,7 +33,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "",
+        "foregroundImage": "./assets/images/logo_medium.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.reactnexpobase"

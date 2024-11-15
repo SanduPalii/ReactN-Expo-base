@@ -62,20 +62,20 @@ export const icons = {
 export const onboarding = [
   {
     id: 1,
-    title: '1. Turn on the sleeve',
-    description: '',
+    title: 'How does it work?',
+    description: '1. Turn on the sleeve',
     image: images.sleeve_power,
   },
   {
     id: 2,
-    title: '2. Check the number from the sleeve',
-    description: '',
+    title: 'How does it work?',
+    description: '2. Check the number from the sleeve',
     image: images.sleeve_tag,
   },
   {
     id: 3,
-    title: '3. Connect the sleeve to the app',
-    description: '',
+    title: 'How does it work?',
+    description: '3. Connect the sleeve to the app',
     image: images.phone_white,
   },
 ];
