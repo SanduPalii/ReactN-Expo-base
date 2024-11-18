@@ -1,11 +1,14 @@
 import { View, Text } from 'react-native';
 import React from 'react';
+import BgImg from '~/components/BgImg';
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <BgImg>
+      <View>
+        <Text>Home</Text>
+      </View>
+    </BgImg>
   );
 };
 
