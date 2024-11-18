@@ -5,6 +5,7 @@ import Swiper from 'react-native-swiper';
 import { onboarding } from '@/constants';
 import CustomButton from '@/components/CustomButton';
 import BgImg from '~/components/BgImg';
+import { twMerge } from 'tailwind-merge';
 
 const Onboarding = () => {
   const swiperRef = useRef<Swiper>(null);
@@ -18,20 +19,22 @@ const Onboarding = () => {
           router.replace('/(root)/(tabs)/home');
         }}
         className="flex w-full items-end justify-end p-5">
-        <Text className="text-md font-JakartaBold text-gray-400">Skip</Text>
+        <Text className="text-md font-JakartaBold text-accent">Skip</Text>
       </TouchableOpacity>
       <Swiper
         ref={swiperRef}
         loop={false}
-        dot={<View className="mx-1 h-[4px] w-[32px] rounded-full bg-[#E2E8F0]" />}
-        activeDot={<View className="mx-1 h-[4px] w-[32px] rounded-full bg-[#0286FF]" />}
+        dot={<View className="bg-textSecondary mx-1 h-[4px] w-[32px] rounded-full" />}
+        activeDot={<View className="bg-primary mx-1 h-[4px] w-[32px] rounded-full" />}
         onIndexChanged={(index) => setActiveIndex(index)}>
         {onboarding.map((item) => (
           <View key={item.id} className="flex items-center justify-center p-5">
             <View className="m-10 flex w-full flex-row items-center justify-center">
-              <Text className="mx-10 text-center text-3xl font-bold text-white">{item.title}</Text>
+              <Text className="text-textPrimary mx-10 text-center text-3xl font-bold">
+                {item.title}
+              </Text>
             </View>
-            <Text className="font-JakartaSemiBold mx-10 mt-3 text-center text-lg text-[#ffffff]">
+            <Text className="font-JakartaSemiBold text-textPrimary mx-10 mt-3 text-center text-lg">
               {item.description}
             </Text>
             <Image source={item.image} resizeMode="contain" className="h-[300px] w-full" />

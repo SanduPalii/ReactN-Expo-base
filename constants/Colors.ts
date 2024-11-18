@@ -1,4 +1,4 @@
-const colors = {
+const Colors = {
   primary: '#0077B6', // Main brand color used for primary buttons, links, etc.
   primaryLight: '#5FC4FA', // A lighter version of the primary color, for hover effects or highlights.
   accent: '#6DE5FF', // Accent color for special elements like highlights or notifications.
@@ -11,4 +11,4 @@ const colors = {
   warning: '#FFC107', // Warning color for alerts or cautions.
 };
 
-export default colors;
+export default Colors;

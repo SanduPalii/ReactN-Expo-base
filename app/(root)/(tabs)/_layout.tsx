@@ -1,5 +1,6 @@
 import { Tabs } from 'expo-router';
 import Feather from '@expo/vector-icons/Feather';
+import Colors from '@/constants/Colors';
 
 const Layout = () => {
   return (
@@ -7,10 +8,10 @@ const Layout = () => {
       initialRouteName="index"
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: '#252525',
+          backgroundColor: Colors.surface,
         },
-        tabBarActiveTintColor: '#0077B6',
-        tabBarInactiveTintColor: '#fff',
+        tabBarActiveTintColor: Colors.primary,
+        tabBarInactiveTintColor: Colors.textPrimary,
       }}>
       <Tabs.Screen
         name="home"
@@ -25,9 +26,7 @@ const Layout = () => {
         options={{
           title: 'Statistics',
           headerShown: false,
-          tabBarIcon: ({ color }) => (
-            <Feather name="bar-chart-2" size={24} color={color} active={color === '#252525'} />
-          ),
+          tabBarIcon: ({ color }) => <Feather name="bar-chart-2" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
