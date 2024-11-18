@@ -1,12 +1,10 @@
-import { Image, ImageBackground, Text, TouchableOpacity, View } from 'react-native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 import React, { useRef, useState } from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import Swiper from 'react-native-swiper';
-import { images, onboarding } from '@/constants';
+import { onboarding } from '@/constants';
 import CustomButton from '@/components/CustomButton';
 import BgImg from '~/components/BgImg';
-import { StatusBar } from 'expo-status-bar';
 
 const Onboarding = () => {
   const swiperRef = useRef<Swiper>(null);
@@ -48,7 +46,6 @@ const Onboarding = () => {
         className="mt-1"
       />
     </BgImg>
-    // </ImageBackground>
   );
 };
 

@@ -1,11 +1,12 @@
 import { View, Text } from 'react-native';
 import React from 'react';
+import BgImg from '~/components/BgImg';
 
 const Statistics = () => {
   return (
-    <View>
+    <BgImg>
       <Text>Statistics</Text>
-    </View>
+    </BgImg>
   );
 };
 
