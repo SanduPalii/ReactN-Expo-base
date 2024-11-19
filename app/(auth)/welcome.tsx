@@ -37,7 +37,7 @@ const Onboarding = () => {
             <Text className="font-JakartaSemiBold text-textPrimary mx-10 mt-3 text-center text-lg">
               {item.description}
             </Text>
-            <Image source={item.image} resizeMode="contain" className="h-[300px] w-full" />
+            <Image source={item.image} resizeMode="contain" className="mt-10 h-[300px] w-full   " />
           </View>
         ))}
       </Swiper>

@@ -5,7 +5,9 @@ import BgImg from '~/components/BgImg';
 const Statistics = () => {
   return (
     <BgImg>
-      <Text>Statistics</Text>
+      <View className="flex-1 items-center justify-center">
+        <Text className="text-textPrimary items-center justify-center text-2xl">Statistics</Text>
+      </View>
     </BgImg>
   );
 };
