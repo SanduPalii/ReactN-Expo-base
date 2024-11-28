@@ -17,7 +17,7 @@
       "tsconfigPaths": true
     },
     "orientation": "portrait",
-    "icon": "./assets/images/logo_medium.png",
+    "icon": "./assets/images/logo_square.png",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/loading_page.png",
@@ -33,7 +33,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo_medium.png",
+        "foregroundImage": "./assets/images/logo_square.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.reactnexpobase"
